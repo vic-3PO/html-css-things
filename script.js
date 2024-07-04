@@ -15,16 +15,3 @@ nextBtn.addEventListener("click", ()=> {
 })
 
 backBtn.addEventListener("click", () => form.classList.remove('secActive'));
-
-// script.js
-function showTable(tableId) {
-    // Ocultar todas as tabelas
-    const tables = document.querySelectorAll('.table');
-    tables.forEach(table => table.style.display = 'none');
-
-    // Mostrar a tabela selecionada
-    const tableToShow = document.getElementById(tableId);
-    if (tableToShow) {
-        tableToShow.style.display = 'table';
-    }
-}

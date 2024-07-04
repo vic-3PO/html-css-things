@@ -1,0 +1,179 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+form .form {
+    display: none;
+}
+
+form .form.first {
+    display: block;
+}
+
+.details {
+    margin-bottom: 1.5rem;
+}
+
+.details .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #444;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.input-field {
+    flex: 1 1 calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field label {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.input-field input,
+.input-field select {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-field input:focus,
+.input-field select:focus {
+    border-color: #007bff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.backBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #007bff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.backBtn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.nextBtn,
+.submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nextBtn:hover,
+.submit:hover {
+    background-color: #0056b3;
+}
+
+/* Modal CSS */
+.modal {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 200px;
+    display: none;
+    /* Inicia oculto */
+    z-index: 1000;
+}
+
+.modal .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.modal .options label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: #444;
+}
+
+.toggle-modal-btn {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    /* Garante que o botão esteja acima do modal */
+}
+
+.toggle-modal-btn:hover {
+    background-color: #0056b3;
+}
