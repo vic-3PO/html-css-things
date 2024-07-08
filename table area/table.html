@@ -17,7 +17,6 @@
     <div id="side-btn" class="side-btn">
         <div class="btn-content">
             <div class="btn-header">
-                <!-- <img src="images/text-justification-svgrepo-com.svg" alt="" style="width: 30px;"> -->
                 <div class="header_title">
                     <h2>Opções do Form</h2>
                 </div>
@@ -29,10 +28,16 @@
                     Form 1
                 </label>
                 <label>
-                    <input type="checkbox" class="form-checkbox" data-form="form2" checked> Form 2
+                    <input type="checkbox" class="form-checkbox" data-form="form2" checked>
+                    Form 2
                 </label>
                 <label>
-                    <input type="checkbox" class="form-checkbox" data-form="form3" checked> Form 3
+                    <input type="checkbox" class="form-checkbox" data-form="form3" checked>
+                    Form 3
+                </label>
+                <label>
+                    <input type="checkbox" class="form-checkbox" data-form="tables-container" checked>
+                    tables container
                 </label>
             </div>
         </div>
@@ -45,7 +50,6 @@
             <div class="form first">
                 <div class="personal details">
                     <span class="title">Detalhes Pessoais</span>
-
                     <div class="fields">
                         <div class="input-field">
                             <label>Nome</label>
@@ -74,33 +78,27 @@
             <div class="form first">
                 <div class="personal details">
                     <span class="title">Detalhes Pessoais</span>
-
                     <div class="fields">
                         <div class="input-field">
                             <label>Nome</label>
                             <input type="text" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Data de nascimento</label>
                             <input type="date" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Email</label>
                             <input type="email" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Celular</label>
                             <input type="text" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Data de nascimento</label>
                             <input type="date" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Email</label>
                             <input type="email" placeholder="placeholder" required>
@@ -117,18 +115,15 @@
             <div class="form first">
                 <div class="personal details">
                     <span class="title">Detalhes Pessoais</span>
-
                     <div class="fields">
                         <div class="input-field">
                             <label>Nome</label>
                             <input type="text" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Data de nascimento</label>
                             <input type="date" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Email</label>
                             <input type="email" placeholder="placeholder" required>
@@ -137,33 +132,27 @@
                 </div>
                 <div class="personal details">
                     <span class="title">Detalhes Pessoais</span>
-
                     <div class="fields">
                         <div class="input-field">
                             <label>Nome</label>
                             <input type="text" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Data de nascimento</label>
                             <input type="date" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Email</label>
                             <input type="email" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Nome</label>
                             <input type="text" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Data de nascimento</label>
                             <input type="date" placeholder="placeholder" required>
                         </div>
-
                         <div class="input-field">
                             <label>Email</label>
                             <input type="email" placeholder="placeholder" required>
@@ -173,6 +162,126 @@
             </div>
         </form>
     </div>
+
+    <div id="tables-container" class="container">
+        <main class="table" id="customers_table">
+            <section class="table__header">
+                <h1>Customer's Orders</h1>
+                <div class="input-group">
+                    <input type="search" placeholder="Search Data...">
+                    <img src="images/search.png" alt="">
+                </div>
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Customer <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Location <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Order Date <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Amount <span class="icon-arrow">&UpArrow;</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 1 </td>
+                            <td> Zinzu Chan Lee</td>
+                            <td> Seoul </td>
+                            <td> 17 Dec, 2022 </td>
+                            <td>
+                                <p class="status delivered">Delivered</p>
+                            </td>
+                            <td> <strong> $128.90 </strong></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td> Jeet Saru </td>
+                            <td> Kathmandu </td>
+                            <td> 27 Aug, 2023 </td>
+                            <td>
+                                <p class="status cancelled">Cancelled</p>
+                            </td>
+                            <td> <strong>$5350.50</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td> Sonal Gharti </td>
+                            <td> Tokyo </td>
+                            <td> 14 Mar, 2023 </td>
+                            <td>
+                                <p class="status shipped">Shipped</p>
+                            </td>
+                            <td> <strong>$210.40</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td> Alson GC </td>
+                            <td> New Delhi </td>
+                            <td> 25 May, 2023 </td>
+                            <td>
+                                <p class="status delivered">Delivered</p>
+                            </td>
+                            <td> <strong>$149.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 5</td>
+                            <td> Sarita Limbu </td>
+                            <td> Paris </td>
+                            <td> 23 Apr, 2023 </td>
+                            <td>
+                                <p class="status pending">Pending</p>
+                            </td>
+                            <td> <strong>$399.99</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 6</td>
+                            <td> Alex Gonley </td>
+                            <td> London </td>
+                            <td> 23 Apr, 2023 </td>
+                            <td>
+                                <p class="status cancelled">Cancelled</p>
+                            </td>
+                            <td> <strong>$399.99</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 7</td>
+                            <td> Jeet Saru </td>
+                            <td> New York </td>
+                            <td> 20 May, 2023 </td>
+                            <td>
+                                <p class="status delivered">Delivered</p>
+                            </td>
+                            <td> <strong>$399.99</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 8</td>
+                            <td> Aayat Ali Khan </td>
+                            <td> Islamabad </td>
+                            <td> 30 Feb, 2023 </td>
+                            <td>
+                                <p class="status pending">Pending</p>
+                            </td>
+                            <td> <strong>$149.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 9</td>
+                            <td> Alson GC </td>
+                            <td> Dhaka </td>
+                            <td> 22 Dec, 2023 </td>
+                            <td>
+                                <p class="status cancelled">Cancelled</p>
+                            </td>
+                            <td> <strong>$249.99</strong> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+
 </body>
 <script src="table.js"></script>
 
