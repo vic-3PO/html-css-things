@@ -14,7 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url(apis-bg.webp) no-repeat center;
+    background: url(images/apis-bg.webp) no-repeat center;
 }
 
 .container {
@@ -106,4 +106,97 @@ form .fields .input-field {
 
 .input-field input[type="date"]:valid {
     color: #333;
+}
+
+.container form button {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    margin: 25px 0;
+    background-color: #4bcd3e;
+    border: 3px solid #4bcd3e;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+button svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: #4bcd3e;
+}
+
+/* ================================ btn ============================= */
+
+#open-btn {
+    position: fixed;
+    top: 90%;
+    left: 2%;
+    border: none;
+    background-color: #4bcd3e;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.side-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: #fff;
+    z-index: 2;
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.1);
+    transform: translateX(-110%);
+    transition: transform 0.4s ease;
+}
+
+.side-btn.open {
+    transform: translateX(0);
+}
+
+.btn-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-header {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    position: relative;
+}
+
+.btn-header .close-btn {
+    color: #4bcd3e;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-header .close-btn:hover {
+    transition: scale(1.1);
 }
