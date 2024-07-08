@@ -12,3 +12,20 @@ function openOptions() {
 function closeOptions() {
     options.classList.remove('open')
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const checkboxes = document.querySelectorAll('.form-checkbox');
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            const formId = this.getAttribute('data-form');
+            const form = document.getElementById(formId);
+
+            if (this.checked) {
+                form.classList.remove('hidden');
+            } else {
+                form.classList.add('hidden');
+            }
+        });
+    });
+});

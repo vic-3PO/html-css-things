@@ -138,6 +138,10 @@ form button:hover {
     color: #4bcd3e;
 }
 
+.hidden {
+    display: none;
+}
+
 /* ================================ btn ============================= */
 
 #open-btn {
@@ -200,3 +204,12 @@ form button:hover {
 .btn-header .close-btn:hover {
     transition: scale(1.1);
 }
+
+.btn-items {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+/* =========================== check box ============================ */
